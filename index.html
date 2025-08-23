@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mobil / PC Ayrımı</title>
+<style>
+
+#mobileView, #pcView {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="mobileView">
+    <div class="container">
+        <div class="facebook-logo">Android için Facebook'u yükle ve daha hızlı gezin.</div>
+        <div class="line"></div>
+        <div class="turkish-text">Türkçe</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/960px-Facebook_Logo_%282019%29.png" class="logo" alt="Facebook Logo">
+        <div class="input-container">
+            <input type="text" placeholder="Cep telefonu numarası veya e-posta">
+            <input type="password" placeholder="Şifre">
+        </div>
+        <button class="login-button">Giriş yap</button>
+        <div class="forgot-password">Şifreni mi unuttun?</div>
+        <div class="create-account">Yeni hesap oluştur</div>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1280px-Meta-Logo.png" class="logo2">
+</div>
+
+
+<div id="pcView">
+    <div class="container">
+        <div class="logo">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Logo" />
+            <div class="slogan">
+                <p>Facebook tanıdıklarınla iletişim kurmanı </p>
+                <p>ve hayatında olup bitenleri paylaşmanı </p>
+                <p>sağlar.</p>
+            </div>
+        </div>
+
+        <div class="login-box">
+            <input type="text" placeholder="E-posta veya Telefon Numarası" />
+            <input type="password" placeholder="Şifre" />
+            <button class="login-btn">Giriş Yap</button>
+
+            <div class="forgot-password">
+                <a href="#">Şifreni mi Unuttun?</a>
+            </div>
+            <div class="line"></div>
+            <button class="create-account-btn">Yeni Hesap Oluştur</button>
+        </div>
+        <p class="yazi">
+            Ünlü biri, marka veya işletme için Sayfa oluştur.
+        </p>
+    </div>
+    <div class="box-box">
+        <p class="box-text">
+            Türkçe English (UK) Kurdî (Kurmancî) العربية Zaza Deutsch Русский
+            Français (France) فارسی Español Português (Brasil)<br /><br />
+            <span style="padding-left: 115px;">
+                Kaydol Giriş Yap Messenger Facebook Lite Video Meta Pay Meta Mağazası Meta Quest Ray-Ban Meta Meta AI Meta AI daha fazla içerik Instagram<br /><br />
+            </span>
+            <span style="padding-left: 108px;">
+                ThreadsOy Kullanma Bilgi Merkezi Gizlilik İlkesi Gizlilik Merkezi Hakkımızda Reklam Oluştur Sayfa Oluştur Geliştiriciler Kariyer Olanakları Çerezler<br /><br />
+            </span>
+            <span style="margin-left: -114px; display: inline-block;">
+                Ad Choices Koşullar Yardım Kişi Yükleme ve Hesabı Olmayan Kişiler Ayarlar Hareketler dökümü <br /><br /><br />
+            </span>
+        </p>
+    </div>
+</div>
+
+<style>
+#mobileView {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+}
+#mobileView .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+#mobileView .facebook-logo {
+    position: absolute;
+    top: 17px;
+    left: 2.5px;
+    right: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #1877F2;
+}
+#mobileView .line {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 0.5px;
+    background-color: grey;
+}
+#mobileView .turkish-text {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: gray;
+    font-weight: 100;
+}
+#mobileView .logo {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: #1877F2;
+    border-radius: 50%;
+}
+#mobileView .logo2 {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+}
+#mobileView .input-container {
+    position: absolute;
+    top: 227px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+#mobileView .input-container input {
+    width: 290px;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+}
+#mobileView .login-button {
+    position: absolute;
+    top: 365px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    background-color: #1877F2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#mobileView .forgot-password {
+    position: absolute;
+    top: 425px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 300;
+    text-decoration: none;
+}
+#mobileView .create-account {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1.4px solid #b8d7df;
+    padding: 12px;
+    border-radius: 30px;
+    width: 290px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #0161e7;
+}
+</style>
+
+<style>
+#pcView {
+    background-color: #f2f4f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pcView .container {
+    position: relative;
+    width: 100%;
+}
+#pcView .logo {
+    position: absolute;
+    top: 145px;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+}
+#pcView .logo img {
+    width: 300%;
+    height: auto;
+}
+#pcView .slogan {
+    margin-left: 28%;
+    font-size: 25px;
+    white-space: nowrap;
+    margin-top: -25px;
+}
+#pcView .slogan p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+#pcView .login-box {
+    background-color: white;
+    padding: 4px 10px;
+    width: 300px;
+    height: 260px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    left: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+#pcView .box-box {
+    background-color: rgb(255, 255, 255);
+    padding: 4px 10px;
+    width: 99%;
+    height: 210px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0 auto;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+#pcView .box-text {
+    font-size: 10px;
+    margin-top: -60px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 41%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: gray;
+}
+#pcView .login-box input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 12px;
+    z-index: 11;
+}
+#pcView .line {
+    width: 95%;
+    height: 0.5px;
+    background-color: rgb(169, 168, 168);
+    margin: 10px 0;
+    z-index: 9;
+}
+#pcView .login-box button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 11;
+}
+#pcView .create-account-btn {
+    width: 88%;
+    padding: 10px;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+#pcView .login-btn {
+    width: 88%;
+    padding: 10px;
+    background-color: #0866ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#pcView .forgot-password {
+    text-align: center;
+    font-size: 12px;
+}
+#pcView .forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+#pcView .create-account-btn:hover {
+    background-color: #0056b3;
+}
+#pcView .footer {
+    text-align: center;
+    margin-top: 40px;
+}
+#pcView .footer p {
+    font-size: 12px;
+}
+#pcView .footer select {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+#pcView .footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#pcView .footer-links a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 12px;
+}
+#pcView .footer-links a:hover {
+    text-decoration: underline;
+}
+#pcView .footer-bottom {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #666;
+}
+#pcView .account-table {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+#pcView .account-table td {
+    padding: 11px;
+    text-align: center;
+}
+#pcView .account-table button {
+    width: 140px;
+}
+#pcView .yazi {
+    text-align: center;
+    font-size: 12px;
+    width: 320px;
+    height: 580px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    left: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+<script>
+
+function detectMobile() {
+
+  return window.innerWidth <= 768;
+}
+
+function showAppropriateView() {
+  if(detectMobile()) {
+    document.getElementById('mobileView').style.display = 'block';
+    document.getElementById('pcView').style.display = 'none';
+  } else {
+    document.getElementById('mobileView').style.display = 'none';
+    document.getElementById('pcView').style.display = 'block';
+  }
+}
+
+
+window.addEventListener('load', showAppropriateView);
+window.addEventListener('resize', showAppropriateView);
+</script>
+
+</body>
+</html>
